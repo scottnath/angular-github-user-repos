@@ -10,7 +10,7 @@
 (function(){
 
 angular.module('angularGithubUserRepos', ['angular-github-user-repos/user-repos.html', 'angularMoment'])
-  .directive('githubs', ['githubService', function(githubService) {
+  .directive('githubUserRepos', ['githubService', function(githubService) {
     return {
       //works on attribute
       restrict: 'E',

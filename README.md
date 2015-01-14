@@ -25,7 +25,7 @@ angular.module('angularApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize',
 
 ### Using the directive in your html
 
-```<githubs user="scottnath" limit="15"></githubs>```
+```<github-user-repos user="scottnath" limit="15"></github-user-repos>```
 
 ### Styling
 
