@@ -1,0 +1,107 @@
+.repo-list
+{
+  position: relative;
+}
+.repo-list .participation-graph
+{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.repo-list .participation-graph.disabled
+{
+  display: none;
+}
+.repo-list .participation-graph .bars
+{
+  bottom: 0;
+  position: absolute;
+}
+.repo-list-item
+{
+  border-bottom: 1px solid #eee;
+  list-style: none;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+}
+.repo-list-name
+{
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.repo-list-name .prefix,.repo-list-name .slash
+{
+  font-weight: normal;
+}
+.repo-list-name .slash
+{
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.repo-list-description
+{
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  max-width: 550px;
+}
+.repo-list-stats
+{
+  color: #888;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.repo-list-stats .repo-list-stat-item
+{
+  color: #888;
+  display: inline-block;
+  margin-left: 8px;
+  text-decoration: none;
+}
+.repo-list-stats .repo-list-stat-item:hover
+{
+  color: #4183c4;
+}
+.repo-list-stats .repo-list-stat-item>.octicon
+{
+  font-size: 14px;
+}
+.repo-list-info
+{
+  color: #888;
+  display: inline-block;
+  font-size: 12px;
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  vertical-align: middle;
+}
+.repo-list-info .octicon
+{
+  font-size: 12px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+.repo-list-meta
+{
+  color: #888;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.repo-list-meta .avatar
+{
+  margin-top: -2px;
+}
+.repo-list-meta a:hover
+{
+  text-decoration: none;
+}

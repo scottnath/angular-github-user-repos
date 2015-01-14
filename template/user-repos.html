@@ -1,0 +1,31 @@
+<div class="container github-user-repos">
+  <span class="error" ng-show="repo.githuberror">{{githuberror}}</span>
+  <ul class="repo-list">
+    <li class="repo-list-item" ng-repeat="repo in repos.data | orderBy:'updated_at':true">
+      <div class="repo-list-stats">
+        <a class="repo-list-stat-item tooltipped tooltipped-s stargazers" href="{{repo.svn_url}}/stargazers" aria-label="Stargazers">
+          <span class="octicon octicon-star"></span>
+          {{repo.stargazers_count}}
+        </a>
+        <a class="repo-list-stat-item tooltipped tooltipped-s forks" href="{{repo.svn_url}}/network" aria-label="Forks">
+          <span class="octicon octicon-git-branch"></span>
+          {{repo.forks}}
+        </a>
+        <a class="repo-list-stat-item tooltipped tooltipped-s watchers" href="{{repo.svn_url}}/network" aria-label="Forks">
+          <span class="octicon octicon-eye"></span>
+          {{repo.watchers}}
+        </a>
+      </div>
+      <h3 class="repo-list-name">
+        <a href="{{repo.svn_url}}">{{repo.name}}</a>
+      </h3>
+      <p class="repo-list-description" ng-show="repo.description">{{repo.description}}</p>
+
+      <p class="repo-list-meta">
+          Updated <time datetime="{{repo.updated_at}}" is="relative-time" title="{{repo.updated_at | amDateFormat:'dddd, MMMM Do YYYY, h:mm:ss a'}}">{{repo.updated_at | amTimeAgo}}</time>
+      </p>
+
+    </li>
+  </ul>
+
+</div>
